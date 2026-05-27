@@ -6,15 +6,17 @@ export type Hotspot = {
   export type Piece = {
     id: string;
     name: string;
+    category: string;
     price: number;
     image: string;
     hotspot: Hotspot;
   };
-  
+
   export const pieces: Piece[] = [
     {
       id: "mug-green",
       name: "Green Tiles Mug",
+      category: "Mug",
       price: 44,
       image: "/images/pieces/card_piece_1.png",
       hotspot: { x: 16, y: 70 },
@@ -22,6 +24,7 @@ export type Hotspot = {
     {
       id: "vase-strawberry",
       name: "Strawberry Vase",
+      category: "Vase",
       price: 52,
       image: "/images/pieces/card_piece_2.png",
       hotspot: { x: 31, y: 57 },
@@ -29,6 +32,7 @@ export type Hotspot = {
     {
       id: "cat-vase",
       name: "Cat Vase",
+      category: "Vase",
       price: 58,
       image: "/images/pieces/card_piece_3.png",
       hotspot: { x: 53, y: 67 },
@@ -36,6 +40,7 @@ export type Hotspot = {
     {
       id: "mini-chair",
       name: "Tiny Chair",
+      category: "Sculpture",
       price: 39,
       image: "/images/pieces/card_piece_4.png",
       hotspot: { x: 72, y: 57 },
@@ -43,6 +48,7 @@ export type Hotspot = {
     {
       id: "ice-cream-cup",
       name: "Ice Cream Cup",
+      category: "Cup",
       price: 36,
       image: "/images/pieces/card_piece_5.png",
       hotspot: { x: 86, y: 68 },

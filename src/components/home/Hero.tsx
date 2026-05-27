@@ -110,7 +110,7 @@ export default function Hero() {
     const length = pathRef.current.getTotalLength();
 
     if (!animateNextRef.current) {
-      setDash({ array: length, offset: 0 }); // default: completo
+      setDash({ array: length, offset: 0 });
       return;
     }
 
@@ -290,7 +290,7 @@ export default function Hero() {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-black/10 pt-6 text-xs text-black/60 md:flex-row">
+        <div className="mt-8 flex flex-row items-center justify-between gap-4 border-t border-black/10 pt-4 text-xs text-black/60 md:mt-16 md:flex-row">
           <span>Since 2020</span>
           <span>By Angie</span>
           <span>Buenos Aires</span>
