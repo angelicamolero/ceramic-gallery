@@ -137,7 +137,7 @@ export default function Hero() {
 
   return (
     <section className="w-full">
-      <div className="relative mx-auto px-6 py-16">
+      <div className="relative mx-auto px-6 pt-16 pb-8">
         <div
           ref={heroRef}
           className="relative min-h-[500px] flex flex-col items-center md:flex md:items-start md:min-h-[460px]"
@@ -290,9 +290,9 @@ export default function Hero() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 flex flex-row items-center justify-between gap-4 border-t border-black/10 pt-4 text-xs text-black/60 md:mt-16 md:flex-row">
+        <div className="mt-8 flex flex-row items-center justify-between gap-4 border-t border-black/10 pt-4 text-xs text-black/60 md:mt-10 md:flex-row">
           <span>Since 2020</span>
-          <span className="bg-[#7A2533] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">By Angie</span>
+          <span className="bg-[#7A2533] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Angelica Molero</span>
           <span>Buenos Aires</span>
         </div>
       </div>
