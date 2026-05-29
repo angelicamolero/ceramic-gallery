@@ -24,7 +24,7 @@ export default function PieceCard({ piece, index }: Props) {
       <div className="px-4 py-3 bg-white border-t border-black/10 flex items-center justify-between gap-2">
         <div>
           <p className="text-sm font-medium text-black leading-snug">{piece.name}</p>
-          <p className="text-xs text-black/40 mt-0.5 uppercase tracking-wide">{piece.category}</p>
+          <span className="inline-block mt-1 bg-[#7A2533] text-white text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full">{piece.category}</span>
         </div>
         <p className="text-sm text-black/60 shrink-0">${piece.price}</p>
       </div>

@@ -9,7 +9,7 @@ export default function FeaturedCard({ piece }: Props) {
   if (!piece?.image) return null;
 
   return (
-    <div className="border border-black/20 bg-white p-3 w-[180px]">
+    <div className="border border-black/10 bg-white p-3 w-[180px] shadow-[0_4px_20px_rgba(0,0,0,0.10)]">
       <div className="relative h-[140px] w-full">
         <Image
           src={piece.image}

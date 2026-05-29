@@ -292,7 +292,7 @@ export default function Hero() {
         {/* Footer */}
         <div className="mt-8 flex flex-row items-center justify-between gap-4 border-t border-black/10 pt-4 text-xs text-black/60 md:mt-16 md:flex-row">
           <span>Since 2020</span>
-          <span>By Angie</span>
+          <span className="bg-[#7A2533] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">By Angie</span>
           <span>Buenos Aires</span>
         </div>
       </div>

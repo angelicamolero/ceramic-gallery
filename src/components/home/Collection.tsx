@@ -3,10 +3,10 @@ import PieceCard from "./PieceCard";
 
 export default function Collection() {
   return (
-    <section className="pt-6 pb-10 md:py-16">
+    <section className="pt-4 pb-6 md:pt-10 md:pb-10">
       <div className="px-6 flex items-baseline justify-between mb-10">
         <h2 className="text-4xl font-medium italic text-black">Collection</h2>
-        <span className="text-xs text-black/40 uppercase tracking-widest">
+        <span className="bg-[#7A2533] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
           {pieces.length} pieces
         </span>
       </div>
@@ -28,11 +28,9 @@ export default function Collection() {
       </div>
 
       <div className="mt-10 px-6 flex justify-center md:justify-end">
-        <button className="group border border-neutral-300 bg-transparent px-6 py-2.5 text-sm font-normal text-neutral-400 rounded-full hover:text-black hover:border-black transition-colors duration-300">
-          <span className="relative">
-            See all
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-black transition-all duration-300 group-hover:w-full" />
-          </span>
+        <button className="group flex items-center gap-2 bg-[#7A2533] text-white text-sm px-6 py-2.5 rounded-full hover:bg-[#611D28] transition-colors duration-300">
+          See all
+          <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
         </button>
       </div>
     </section>
