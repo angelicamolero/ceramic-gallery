@@ -3,17 +3,20 @@
 import Image from "next/image";
 import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import FeaturedCard from "./FeaturedCard";
-import { pieces } from "@/lib/pieces";
+import { Piece } from "@/lib/pieces";
 
 type Point = { x: number; y: number };
 
-export default function Hero() {
-  // Default: vasito helado
+type Props = {
+  pieces: Piece[];
+};
+
+export default function Hero({ pieces }: Props) {
   const defaultPieceId = "ice-cream-cup";
   const defaultIndex = useMemo(() => {
     const i = pieces.findIndex((p) => p.id === defaultPieceId);
     return i >= 0 ? i : 0;
-  }, []);
+  }, [pieces]);
 
   const [selectedIndex, setSelectedIndex] = useState(defaultIndex);
   const selectedPiece = pieces[selectedIndex];

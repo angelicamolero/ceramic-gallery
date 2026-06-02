@@ -1,7 +1,9 @@
-import { pieces } from "@/lib/pieces";
+import { getPieces } from "@/lib/api";
 import PieceCard from "./PieceCard";
 
-export default function Collection() {
+export default async function Collection() {
+  const pieces = await getPieces();
+
   return (
     <section className="pt-4 pb-6 md:pt-10 md:pb-10">
       <div className="px-6 flex items-baseline justify-between mb-10">
@@ -11,7 +13,7 @@ export default function Collection() {
         </span>
       </div>
 
-      {/* Mobile: slider con peek de la siguiente card */}
+      {/* Mobile: slider */}
       <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory px-6 pb-2 md:hidden [&::-webkit-scrollbar]:hidden [scroll-padding-left:24px]">
         {pieces.map((piece, index) => (
           <div key={piece.id} className="flex-none w-[88%] snap-start">
