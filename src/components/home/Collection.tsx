@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getPieces } from "@/lib/api";
 import PieceCard from "./PieceCard";
 
@@ -30,10 +31,10 @@ export default async function Collection() {
       </div>
 
       <div className="mt-10 px-6 flex justify-center md:justify-end">
-        <button className="group flex items-center gap-2 bg-[#7A2533] text-white text-sm px-6 py-2.5 rounded-full hover:bg-[#611D28] transition-colors duration-300">
+        <Link href="/gallery" className="group flex items-center gap-2 bg-[#7A2533] text-white text-sm px-6 py-2.5 rounded-full hover:bg-[#611D28] transition-colors duration-300">
           See all
           <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-        </button>
+        </Link>
       </div>
     </section>
   );

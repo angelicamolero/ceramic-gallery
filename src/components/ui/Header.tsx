@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SearchIcon from "@/components/icons/SearchIcon";
 import UserIcon from "@/components/icons/UserIcon";
 import BagIcon from "@/components/icons/BagIcon";
@@ -11,7 +12,7 @@ export default function Header() {
             </div>
 
             <nav className="hidden items-center gap-8 text-sm md:flex">
-            <a className="text-black hover:underline" href="#">Shop</a>
+            <Link className="text-black hover:underline" href="/gallery">Shop</Link>
             <a className="text-black hover:underline" href="#">New</a>
             <a className="text-black hover:underline" href="#">Sale</a>
             <a className="text-black hover:underline" href="#">Contact Us</a>

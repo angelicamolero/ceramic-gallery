@@ -19,6 +19,13 @@ export default function PieceCard({ piece, index }: Props) {
           fill
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
         />
+        <button
+          type="button"
+          aria-label="Add to cart"
+          className="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-[#7A2533] hover:text-white"
+        >
+          +
+        </button>
       </div>
 
       <div className="px-4 py-3 bg-white border-t border-black/10 flex items-center justify-between gap-2">
