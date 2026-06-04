@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#7A2533] text-white">
@@ -17,10 +19,10 @@ export default function Footer() {
         <div>
           <p className="text-xs uppercase tracking-widest text-white/50 mb-4">Shop</p>
           <ul className="space-y-2.5 text-sm text-white/80">
-            <li><a href="#" className="hover:text-white transition-colors">All pieces</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">New</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Sale</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Collection</a></li>
+            <li><Link href="/gallery" className="hover:text-white transition-colors">All pieces</Link></li>
+            <li><Link href="/gallery?collection=new" className="hover:text-white transition-colors">New</Link></li>
+            <li><Link href="/gallery?collection=sale" className="hover:text-white transition-colors">Sale</Link></li>
+            <li><Link href="/gallery" className="hover:text-white transition-colors">Collection</Link></li>
           </ul>
         </div>
 

@@ -9,6 +9,7 @@ export type Piece = {
   name: string;
   category: string;
   price: number;
+  salePrice?: number;
   image: string;
   hotspot: Hotspot;
   description: string;
@@ -16,6 +17,7 @@ export type Piece = {
   technique: string;
   material: string;
   dimensions: string;
+  collections: string[]; // ej: ["new"], ["sale"], ["new", "sale"], []
 };
 
 export const pieces: Piece[] = [
@@ -32,6 +34,7 @@ export const pieces: Piece[] = [
     technique: "Hand-built, majolica glaze",
     material: "Stoneware",
     dimensions: "10 × 8 cm",
+    collections: ["new"],
   },
   {
     id: "vase-strawberry",
@@ -39,6 +42,7 @@ export const pieces: Piece[] = [
     name: "Strawberry Vase",
     category: "Vase",
     price: 52,
+    salePrice: 38,
     image: "/images/pieces/card_piece_2.png",
     hotspot: { x: 31, y: 57 },
     description: "Sweet and a little absurd. Because why not put a strawberry on your shelf? It holds flowers, pens, or just takes up beautiful space.",
@@ -46,6 +50,7 @@ export const pieces: Piece[] = [
     technique: "Wheel-thrown, underglaze",
     material: "Earthenware",
     dimensions: "15 × 10 cm",
+    collections: ["new", "sale"],
   },
   {
     id: "cat-vase",
@@ -60,6 +65,7 @@ export const pieces: Piece[] = [
     technique: "Hand-sculpted, matte glaze",
     material: "Stoneware",
     dimensions: "18 × 12 cm",
+    collections: [],
   },
   {
     id: "mini-chair",
@@ -67,6 +73,7 @@ export const pieces: Piece[] = [
     name: "Tiny Chair",
     category: "Sculpture",
     price: 39,
+    salePrice: 28,
     image: "/images/pieces/card_piece_4.png",
     hotspot: { x: 72, y: 57 },
     description: "A chair for nobody. A sculpture that makes you wonder who it's waiting for.",
@@ -74,6 +81,7 @@ export const pieces: Piece[] = [
     technique: "Hand-built, textured glaze",
     material: "Stoneware",
     dimensions: "12 × 6 cm",
+    collections: ["sale"],
   },
   {
     id: "ice-cream-cup",
@@ -81,6 +89,7 @@ export const pieces: Piece[] = [
     name: "Ice Cream Cup",
     category: "Cup",
     price: 36,
+    salePrice: 26,
     image: "/images/pieces/card_piece_5.png",
     hotspot: { x: 86, y: 68 },
     description: "An homage to summer afternoons. Holds pens, small flowers, or just sits on your desk looking happy.",
@@ -88,5 +97,6 @@ export const pieces: Piece[] = [
     technique: "Wheel-thrown, relief pattern",
     material: "Earthenware",
     dimensions: "9 × 7 cm",
+    collections: ["new", "sale"],
   },
 ];
