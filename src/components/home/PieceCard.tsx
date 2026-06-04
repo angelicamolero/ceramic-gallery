@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Piece } from "@/lib/pieces";
 
 type Props = {
@@ -11,8 +12,9 @@ export default function PieceCard({ piece, index }: Props) {
   const isSale = piece.collections.includes("sale");
 
   return (
-    <div
-      className="group cursor-pointer animate-fade-up rounded-xl overflow-hidden border border-black/10"
+    <Link
+      href={`/piece/${piece.slug}`}
+      className="group animate-fade-up rounded-xl overflow-hidden border border-black/10 block"
       style={{ animationDelay: `${Math.min(index, 9) * 100}ms` }}
     >
       <div className="relative aspect-[4/5]">
@@ -68,6 +70,6 @@ export default function PieceCard({ piece, index }: Props) {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -11,6 +11,7 @@ export type Piece = {
   price: number;
   salePrice?: number;
   image: string;
+  heroImage?: string;
   hotspot: Hotspot;
   description: string;
   year: number;
@@ -28,6 +29,7 @@ export const pieces: Piece[] = [
     category: "Mug",
     price: 44,
     image: "/images/pieces/card_piece_1.png",
+    heroImage: "/images/pieces/pdp-hero-mug.png",
     hotspot: { x: 16, y: 70 },
     description: "A morning ritual in ceramic form. Inspired by old tiled walls and the warmth of a kitchen that smells like coffee.",
     year: 2023,
@@ -44,6 +46,7 @@ export const pieces: Piece[] = [
     price: 52,
     salePrice: 38,
     image: "/images/pieces/card_piece_2.png",
+    heroImage: "/images/pieces/pdp-hero-fresa.png",
     hotspot: { x: 31, y: 57 },
     description: "Sweet and a little absurd. Because why not put a strawberry on your shelf? It holds flowers, pens, or just takes up beautiful space.",
     year: 2024,
@@ -59,6 +62,7 @@ export const pieces: Piece[] = [
     category: "Vase",
     price: 58,
     image: "/images/pieces/card_piece_3.png",
+    heroImage: "/images/pieces/pdp-hero-gato.png",
     hotspot: { x: 53, y: 67 },
     description: "Every studio needs a cat. This one holds water and never knocks things off the shelf.",
     year: 2023,
@@ -75,6 +79,7 @@ export const pieces: Piece[] = [
     price: 39,
     salePrice: 28,
     image: "/images/pieces/card_piece_4.png",
+    heroImage: "/images/pieces/pdp-hero-silla.png",
     hotspot: { x: 72, y: 57 },
     description: "A chair for nobody. A sculpture that makes you wonder who it's waiting for.",
     year: 2024,
@@ -91,6 +96,7 @@ export const pieces: Piece[] = [
     price: 36,
     salePrice: 26,
     image: "/images/pieces/card_piece_5.png",
+    heroImage: "/images/pieces/pdp-hero-cup.png",
     hotspot: { x: 86, y: 68 },
     description: "An homage to summer afternoons. Holds pens, small flowers, or just sits on your desk looking happy.",
     year: 2022,
